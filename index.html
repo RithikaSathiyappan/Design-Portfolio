@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rithika S | UI/UX Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.7;
+    }
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: white;
+      padding: 1rem 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      border-bottom: 1px solid #e5e7eb;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    /* Custom Logo */
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #2563eb;
+      background: #e0f2fe;
+      padding: 0.4rem 0.8rem;
+      border-radius: 8px;
+      letter-spacing: 1px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+    }
+    nav ul li a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #2563eb;
+    }
+    header {
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+      color: #1e3a8a;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+    section {
+      max-width: 900px;
+      margin: 4rem auto;
+      padding: 2rem;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 600;
+      font-size: 2rem;
+      color: #1f2937;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #2563eb;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -10px;
+      border-radius: 2px;
+    }
+    /* Project List */
+    .project-list {
+      list-style: none;
+      padding: 0;
+    }
+    .project-item {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    }
+    .project-text {
+      max-width: 70%;
+    }
+    .project-item h3 {
+      color: #2563eb;
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+    .project-item p {
+      color: #555;
+      font-size: 0.95rem;
+    }
+    .project-link {
+      margin-left: 1rem;
+    }
+    .project-link a {
+      color: #2563eb;
+      font-weight: 500;
+      text-decoration: none;
+      border: 1px solid #2563eb;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background 0.3s, color 0.3s;
+      white-space: nowrap;
+    }
+    .project-link a:hover {
+      background: #2563eb;
+      color: white;
+    }
+    .about, .contact {
+      text-align: center;
+      font-size: 1rem;
+      color: #444;
+    }
+    .contact a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">RS</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Hi, I'm Rithika 👩‍💻</h1>
+    <p>UI/UX Designer | Frontend Enthusiast | Turning Ideas into Experiences</p>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>I’m Rithika S, a passionate UI/UX designer and frontend enthusiast who loves turning ideas into sleek, user-friendly digital experiences.</p>
+<br>
+<p>With hands-on skills in Figma, HTML, CSS, and a growing interest in JavaScript and React, I focus on building designs that balance aesthetic appeal and usability. My projects span from responsive web designs to mobile app prototypes, each reflecting creativity, attention to detail, and problem-solving.</p>
+<br>
+<p>I believe design is not just about how things look but how they feel and function. My goal is to create interfaces that leave a lasting impression and make technology more human-centered.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul class="project-list">
+
+      <li class="project-item">
+        <div class="project-text">
+          <h3>MyMusic App</h3>
+          <p>A sleek mobile music player UI designed for smooth interaction and vibrant user engagement. It features intuitive navigation, easy playlist management, and a visually appealing dark/light mode concept to enhance the listening experience.</p>
+        </div>
+        <div class="project-link">
+          <a href="https://www.figma.com/proto/tiWkkcvCjCA2zYXJoD51Pl/Music-UI?node-id=0-1" target="_blank">Figma</a>
+        </div>
+      </li>
+
+      <li class="project-item">
+        <div class="project-text">
+          <h3>Medication Reminder</h3>
+          <p>A mobile app UI built to simplify healthcare routines by helping users set, track, and manage medication schedules. The clean layout focuses on usability, offering quick reminders and an accessible design for all age groups.</p>
+        </div>
+        <div class="project-link">
+          <a href="https://www.figma.com/proto/Mlgf04xtSEorDxnpF1WFyl/Untitled?node-id=0-1" target="_blank">Figma</a>
+        </div>
+      </li>
+
+      <li class="project-item">
+        <div class="project-text">
+          <h3>E-learning Platform</h3>
+          <p>A modern web learning interface crafted to support structured course delivery and interactive study. It includes dashboards, course modules, and progress tracking with a focus on readability, clarity, and responsive design for learners.</p>
+        </div>
+        <div class="project-link">
+          <a href="https://www.figma.com/design/Wdjb7OvRWScTh95EBErh5W/E-Learning-Platform?node-id=16-507" target="_blank">Figma</a>
+        </div>
+      </li>
+
+      <li class="project-item">
+        <div class="project-text">
+          <h3>Replicore UI</h3>
+          <p>A responsive and minimal web interface created with HTML and CSS for the Replicore project. The design emphasizes clarity, scalability, and cross-device adaptability, ensuring a consistent experience across desktops, tablets, and mobiles.</p>
+        </div>
+        <div class="project-link">
+          <a href="https://rithikasathiyappan.github.io/Replicore-Responsive-UI/" target="_blank">Website</a>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:rithikasathiyappan@gmail.com">rithikasathiyappan@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/rithika-sathiyappan" target="_blank">Rithika S</a></p>
+  </section>
+</body>
+</html>
